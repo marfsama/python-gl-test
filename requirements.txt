@@ -1,2 +1,4 @@
 pyglet
 PyOpenGL
+pyshaders
+pyglbuffers

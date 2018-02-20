@@ -10,7 +10,6 @@ from OpenGL.GL.shaders import compileShader, compileProgram
 from OpenGL.GL import glGetProgramInfoLog
 
 from torus import Torus
-from ctypes import *
 
 try:
     # Try and create a window with multisampling (antialiasing)
