@@ -799,6 +799,19 @@ class Matrix3:
 
             return tmp
 
+    def transpose(self):
+        (self.a, self.e, self.i,
+         self.b, self.f, self.j,
+         self.c, self.g, self.k) = \
+            (self.a, self.b, self.c,
+             self.e, self.f, self.g,
+             self.i, self.j, self.k)
+        return self
+
+    def transposed(self):
+        M = self.copy()
+        M.transpose()
+        return M
 
 # a b c d
 # e f g h

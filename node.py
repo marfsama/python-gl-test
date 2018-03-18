@@ -70,7 +70,7 @@ class PerspectiveGroup(pyglet.graphics.OrderedGroup):
         pass
 
     def __repr__(self):
-        return '%s(%r)' % (self.__class__.__name__, self.near, self.far)
+        return '%s(%r - %r)' % (self.__class__.__name__, self.near, self.far)
 
     def __eq__(self, other):
         return (other.__class__ is self.__class__ and
@@ -142,8 +142,6 @@ class TransformGroup(pyglet.graphics.Group):
         buffer = (GLfloat * 16)()
 
         glMultMatrixf(buffer)
-
-
 
     def unset_state(self):
         glPopMatrix()
